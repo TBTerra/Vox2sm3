@@ -11,13 +11,14 @@ Vox2sm3 is a command-line tool for converting .binvox voxel files into blueprint
 ### Limitations and known bugs
 * Total size of the input file is limited such that the product of the dimensions should not exceed 1billion (should not be an issue for ships less than 1.5km in size)
 * when exporting as a custom block type the required materials will state that you need standard grey blocks, the saved blocks are correct but the material list needs fixing
+* As the program uses system commends to clear past files, the provided code only works on windows currently
 
 ### How to use
-Ether download the pre compiled windows exe from [here]() or download the source and compile with ```g++ Vox2sm3.cpp -lz -O2 -o Vox2sm3```
+Ether use the pre compiled windows exe from [here](https://github.com/TBTerra/Vox2sm3/tree/master/bin) or download the source and compile with ```g++ Vox2sm3.cpp -lz -O2 -o Vox2sm3```
 
 The first thing to set up is model its self. Position your model in your editor of choice sutch that positive Z is forwards and positive Y is up, and move the origin point to where you would like the core to be placed (as shown in the picture). then save the model in a format the binvox program can use.
 
-![eve hulk 3d model positioned to export](TUT/obj.png?raw=true)
+![eve hulk 3d model positioned to export](TUT/obj.PNG?raw=true)
 
 You then need to use [binvox](http://www.patrickmin.com/binvox/) to convert the model into voxels, the required conversion flag in ```-fit``` but ```-cb``` and ```-e``` are both highly recommended
 
@@ -27,4 +28,4 @@ Useage is ```Vox2sm3 NAME_OF_MODEL``` do not add .binvox to the end of the name,
 
 If using the ```-b``` flag to use a different block you will need to provide both the block id and the block health, as the program does not have a list of block healths internally
 
-![](TUT/game.png?raw=true)
+![ingame image of hulk import](TUT/game.png?raw=true)
