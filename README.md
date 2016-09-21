@@ -5,7 +5,7 @@ Binvox to Starmade blueprint converter for the importing of 3d models
 Vox2sm3 is a command-line tool for converting .binvox voxel files into blueprint files for Starmade, combined with the binvox program, it allows the importing of shells of entire ships from their 3dmodel.
 ### Features
 * Pickable block type to use
-* when exporting a ship, a core is placed where the use specifies
+* when exporting a ship, a core is placed where the user specifies
 * can export as a ship, a station and as an asteroid (needs more testing)
 
 ### Limitations and known bugs
