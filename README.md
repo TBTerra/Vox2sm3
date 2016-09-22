@@ -1,4 +1,4 @@
-# Vox2sm3 V0.3.2
+# Vox2sm3 V0.3.3
 Binvox to Starmade blueprint converter for the importing of 3d models
 
 ### What is Vox2sm3
